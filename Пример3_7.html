@@ -1,0 +1,27 @@
+
+<!DOCTYPE HTML> 
+<html>
+        <head> 
+            <title>Пример3_7</title>
+        </head>
+ <body>
+    <script>
+    let i=1;
+    //Обратите внимание на создание объектного типа и способ обращения к нему в скрипте
+    let phone_numbers = {
+        firstNumber: "1",
+        twoNumber: "2",
+        threeNumber: "3"};
+    while(i<10){
+    //обратите внимание – можно явно преобразовывать число к строке
+    phone_numbers.firstNumber = phone_numbers.firstNumber + "-" + i.toString();
+    //но также работает и неявное преобразование
+    phone_numbers.twoNumber = phone_numbers.twoNumber + "-" + i;
+    i++;
+    }
+    alert(phone_numbers.firstNumber);
+    alert(phone_numbers.twoNumber);
+    alert(i);
+    </script>
+</body>
+</html>

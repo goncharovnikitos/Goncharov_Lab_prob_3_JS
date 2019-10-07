@@ -1,0 +1,30 @@
+ <!DOCTYPE HTML>
+<html>
+<head> </head>
+<body>
+    <script>
+    let a = prompt("Введите дату (пример 01.12.2019)","");
+    let l =a.split(".");
+    document.write(l);
+    document.write(l[1]);
+    alert(l[1]);
+    switch (l) {
+    case (l[1]==="03" || l[1]==="04" || l[1]==="05"):
+    alert("весна");
+    break;
+    case (l[1]==="06" || l[1]==="07" || l[1]==="08"):
+    alert("лето");
+    break;
+    case (l[1]==="09" || l[1]==="10" || l[1]==="11"):
+    alert("осень");
+    break;
+    default:
+    alert('Не знаю такой месяц: ' + l[1]);
+    }
+    </script>
+</body>
+</html>
+ 
+ 
+ 
+ 

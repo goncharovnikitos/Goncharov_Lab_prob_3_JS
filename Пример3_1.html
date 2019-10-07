@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Пример3_1</title>
+</head>
+<body>
+    <p id="stroka"></p>
+    <p id="number"></p>
+    <p class="ob"></p>
+    <script>
+    let i = 1;
+    let j;
+    let person = {
+    firstname: "John",
+    lastname: "Doe",
+    id: 5566
+    };
+    let carname = new String;
+    let x = new Number;
+    let y = new Boolean;
+    let cars = new Array;
+    let anything = new Object;
+    cars=["Saab","Volvo","BMV"];
+    carname="Hello World!";
+    x=732.1;
+    document.getElementById("stroka").innerHTML=carname.replace("ll","l");
+    document.getElementById("number").innerHTML=x.toExponential(3);
+    document.write(person.lastname + "<br>" + "age:" + Number.MAX_VALUE+"<br>"+"car:"+cars[1]);
+    </script>
+
+</body>
+</html>

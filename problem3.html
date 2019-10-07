@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem3</title>
+    </head>
+<body>
+
+<script>
+    let str= " ";
+
+findNumber:    
+for(let i =2; i<100; i++){
+    for (let j = 2; j < i; j++) { 
+   // document.write(j + "<br>");
+    if (i % j == 0) continue findNumber; 
+  }
+
+  document.write(str + i);
+}
+</script> 
+</body> 
+</html>
