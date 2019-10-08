@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem5</title>
+    </head>
+<body>
+<p >  Длина текста: <p id ="length"> 0 </p></p>
+<p> Кол-во вхождений стоп-слов: <p id="count" > 0</p>
+<script>
+function randomInteger(min, max) {
+  let rand = min + Math.random() * (max  - min);
+  return Math.floor(rand);
+}
+let length=randomInteger(10,100);
+let value =prompt("Минимальное длина символов для ввода текста " + length,"");
+let l = value.length;
+let arr = value.split(" ");
+let count =0;
+function Countwords(list){
+for(i=0;i<list.length; i++){
+    if(list[i]==="был") count++;
+    else if(list[i]==="имеет") count++;
+    else if(list[i]==="есть") count++;
+}
+return count;
+}
+//alert(l);
+//alert(arr);
+//alert(Countwords(arr) );
+document.getElementById("length").innerHTML =l; 
+document.getElementById("count").innerHTML =Countwords(arr); 
+</script> 
+</body> 
+</html>
